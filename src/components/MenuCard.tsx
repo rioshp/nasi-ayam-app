@@ -6,7 +6,7 @@ type MenuCardProps = {
 
 const MenuCard = (Prop: MenuCardProps) => {
     return (
-        <div className="w-full px-4 py-4 rounded-lg shadow-lg flex flex-col md:flex-row items-center md:items-center">
+        <div className="w-full px-4 py-4 rounded-4xl shadow-lg flex flex-col md:flex-row items-center md:items-center">
           <img
             src={Prop.imageUrl}
             alt={Prop.title}
