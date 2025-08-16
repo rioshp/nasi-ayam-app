@@ -5,9 +5,9 @@ import nasiKuning from "./assets/nasiKuning.jpg";
 
 function App() {
   return (
-    <div className="bg-gray-100 min-h-screen p-30">
+    <div className="bg-gray-100 min-h-screen mt-20">
       <Navbar />
-      <div className="flex gap-10 justify-center">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center px-10">
         <MenuCard
           title="Nasi Ayam Yuk Yak Yuk"
           imageUrl={nasiAyam}

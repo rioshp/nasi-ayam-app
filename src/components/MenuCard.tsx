@@ -6,10 +6,17 @@ type MenuCardProps = {
 
 const MenuCard = (Prop: MenuCardProps) => {
     return (
-        <div className="w-100 bg-amber-400 p-4 rounded-lg shadow-lg flex flex-col items-center">
+        <div className="w-full px-4 py-4 rounded-lg shadow-lg flex flex-col md:flex-row items-center md:items-center">
+          <img
+            src={Prop.imageUrl}
+            alt={Prop.title}
+            className="rounded-2xl object-cover border-4 border-amber-500 w-full h-48 md:w-52 md:h-52 aspect-square"
+            style={{ maxWidth: '100%', height: 'auto' }}
+          />
+          <div className="md:ml-6 flex flex-col justify-center h-full md:h-[208px] md:justify-center text-center md:text-left w-full mt-4 md:mt-0">
             <h2 className="text-xl font-semibold">{Prop.title}</h2>
-            <img src={Prop.imageUrl} alt={Prop.title} className="mt-5 mb-5 rounded-2xl w-50 h-50 object-cover" />
             <p className="text-gray-600">{Prop.description}</p>
+          </div>
         </div>
     )
 }
