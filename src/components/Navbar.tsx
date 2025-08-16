@@ -31,7 +31,7 @@ const Navbar = () => {
         <ul className="flex space-x-4 mr-20">
           <li>
             <a
-              href="/"
+              href="/nasi-ayam-app/"
               className="hover:text-yellow-400 p-2 font-semibold rounded-[10px] "
             >
               Home
