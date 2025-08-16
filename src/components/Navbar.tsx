@@ -4,7 +4,7 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="absolute flex items-center justify-between top-0 left-0 right-0 bg-gray-800 text-white p-4">
+    <nav className="absolute flex items-center justify-between top-0 left-0 right-0 bg-linear-45/oklch from-orange-600 to-orange-400 text-white p-4">
       <h1 className="text-2xl ml-4 md:ml-20 font-bold">YUK YAK YUK</h1>
       {/* Hamburger for mobile */}
       <button
@@ -28,59 +28,59 @@ const Navbar = () => {
       </button>
       {/* Desktop menu */}
       <nav className="hidden md:block">
-        <ul className="flex space-x-4 mr-10">
+        <ul className="flex space-x-4 mr-20">
           <li>
             <a
               href="/"
-              className="hover:text-yellow-400 p-2 font-semibold border-2 rounded-[10px] border-yellow-400"
+              className="hover:text-yellow-400 p-2 font-semibold rounded-[10px] "
             >
-              Beranda
+              Home
             </a>
           </li>
           <li>
             <a
-              href="/Pemesanan"
-              className="hover:text-yellow-400 p-2 font-semibold border-2 rounded-[10px] border-yellow-400"
+              href="/Order"
+              className="hover:text-yellow-400 p-2 font-semibold rounded-[10px] "
             >
-              Pemesanan
+              Order
             </a>
           </li>
           <li>
             <a
-              href="/Kontak"
-              className="hover:text-yellow-400 p-2 font-semibold border-2 rounded-[10px] border-yellow-400"
+              href="/Contact"
+              className="hover:text-yellow-400 p-2 font-semibold rounded-[10px] "
             >
-              Kontak
+              Contact
             </a>
           </li>
         </ul>
       </nav>
       {/* Mobile menu */}
       {menuOpen && (
-        <nav className="absolute top-16 left-0 right-0 bg-gray-800 md:hidden z-10">
+        <nav className="absolute top-16 left-0 right-0 min-h-screen bg-linear-45/oklch from-gray-200 to-gray-700 md:hidden z-10">
           <ul className="flex flex-col space-y-2 p-4">
             <li>
               <a
                 href="/"
                 className="hover:text-yellow-400 p-3 border-b rounded-lg block"
               >
-                Beranda
+                Home
               </a>
             </li>
             <li>
               <a
-                href="/Pemesanan"
+                href="/Order"
                 className="hover:text-yellow-400 p-3 border-b rounded-lg block"
               >
-                Pemesanan
+                Order
               </a>
             </li>
             <li>
               <a
-                href="/Kontak"
+                href="/Contact"
                 className="hover:text-yellow-400 p-3 border-b rounded-lg block"
               >
-                Kontak
+                Contact
               </a>
             </li>
           </ul>

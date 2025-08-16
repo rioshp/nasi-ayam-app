@@ -1,5 +1,5 @@
-import nasiAyam from './nasi-ayam.jpg';
-import nasiKuning from './nasi-kuning.jpg';
+import nasiAyam from './nasiAyam.jpg';
+import nasiKuning from './nasiKuning.jpg';
 const images = {
     nasiAyam,
     nasiKuning,
